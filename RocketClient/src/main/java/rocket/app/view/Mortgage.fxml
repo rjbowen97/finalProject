@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rocket.app.view.MortgageController">
+   <children>
+      <Label layoutX="182.0" layoutY="54.0" text="Income: " />
+      <Label layoutX="182.0" layoutY="94.0" text="Expenses: " />
+      <Label layoutX="182.0" layoutY="135.0" text="Credit Score: " />
+      <Label layoutX="182.0" layoutY="175.0" text="House Cost: " />
+      <Label layoutX="182.0" layoutY="215.0" text="Term: " />
+      <TextField fx:id="txtIncome" layoutX="290.0" layoutY="50.0" />
+      <TextField fx:id="txtExpenses" layoutX="290.0" layoutY="90.0" />
+      <TextField fx:id="txtCreditScore" layoutX="290.0" layoutY="131.0" />
+      <TextField fx:id="txtHouseCost" layoutX="290.0" layoutY="171.0" />
+      <ComboBox fx:id="cmbLoanTerm" layoutX="290.0" layoutY="211.0" prefWidth="150.0" />
+      <Label layoutX="182.0" layoutY="330.0" text="PAYMENT: " />
+      <TextField fx:id="txtPayment" layoutX="290.0" layoutY="326.0" />
+      <Button fx:id="btnCalculate" layoutX="502.0" layoutY="339.0" mnemonicParsing="false" onAction="#btnCalculatePayment" text="Calculate" />
+   </children>
+</AnchorPane>
